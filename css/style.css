@@ -263,6 +263,10 @@ padding-right: 2em;
 .pledges .mahogany_title {
     color: rgb(122, 122, 122, 0.9);
 }
+.pledges p {
+    color: var(--moderatecyan);
+    font-weight: 500;
+}
 
 .bamboo_stand .pledges,
 .black_stand .pledges,

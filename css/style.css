@@ -63,6 +63,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 11.6em;
+    margin-right: 11.6em;
 
 }
 .logo {
@@ -93,6 +95,7 @@ a {
 .mastercraftB p {
     text-align: center;
     padding-top: 1em;
+    color: var(--darkgray);
 }
 
 .backbook {
@@ -104,7 +107,7 @@ a {
 .backP {
     padding: 10px 20px;
     border: none;
-    background-color:var(--moderatecyan);
+    background-color:var(--darkcyan);
     border-radius: 45px;
     color: white;
     font-weight: 600;
@@ -134,6 +137,10 @@ a {
     border-radius: 25px;
     color: white;
     font-weight: 600;
+    cursor: pointer;
+}
+.select:hover {
+    background-color: var(--darkcyan);
 }
 
 .trackers {
@@ -141,14 +148,14 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
 justify-content: space-evenly;
     position: relative;
-    top: 10em;
+    top: 8em;
     background-color: white;
     border: 1px solid white;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding-top: 2em;
     padding-left: 2em;
-    padding-right: 2em;
+    padding-right: 1.5em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid white;
 }
@@ -160,6 +167,7 @@ padding-right: 2.5em;
 }
 .trackers div:nth-of-type(1) {
     border-right: 1px solid rgb(122, 122, 122, 0.76);
+    text-align: center;
 }
 .trackers div:nth-of-type(2) {
     border-right: 1px solid rgb(122, 122, 122, 0.76);
@@ -177,22 +185,84 @@ padding-right: 2.5em;
 }
 
 .bar {
-   width: 100px;
     height: 10px;
     background-color: var(--moderatecyan);
     margin-top: 1em;
     position: relative;
-    left: 20%;
+    left: 30%;
+    margin-left: 0px;
 }
 
+.about {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1em;
+    border: 1px solid white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: white;
+    position: relative;
+    top: 9em;
+margin: inherit;
+
+}
 .about h3 {
-text-align: left;
+    padding-bottom: 1.3em;
 }
-
 .about p {
-    font-size: 16px;
+    color: var(--darkgray);
+    line-height: 1.5;
 }
-
+.about p:nth-of-type(2){
+    padding-top: 1em;
+}
+.bamboo_stand, .black_stand, .mahogany_stand {
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: 1px solid rgb(122, 122, 122, 0.3);
+    border-radius: 4px;
+}
+.pledges, .left, .details {
+padding-left: 2em;
+padding-right: 2em;
+}
+.left {
+    padding-top: 1em;
+}
+.left p {
+    font-size: 1.4em;
+    color: black;
+   font-weight: 900;
+}
+.left p span {
+    color: rgb(122, 122, 122, 0.9);
+    font-size: small;
+    font-weight: normal;
+    vertical-align: super;
+}
+.stock {
+    padding: 10px 20px;
+    border: none;
+    background-color:var(--moderatecyan);
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.stock:disabled {
+    background-color: rgb(122, 122, 122, 0.5);
+}
+.left .leftm {
+    color: rgb(122, 122, 122, 0.8);
+}
+.pledges .mahogany_title {
+    color: rgb(122, 122, 122, 0.9);
+}
 
 .bamboo_stand .pledges,
 .black_stand .pledges,

@@ -146,9 +146,12 @@ a {
 }
 
 .trackers {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-justify-content: space-evenly;
+justify-content: space-evenly; */
     position: relative;
     top: 8em;
     background-color: white;
@@ -189,10 +192,11 @@ padding-right: 2.5em;
 .bar {
     height: 10px;
     background-color: var(--moderatecyan);
-    margin-top: 1em;
+    /* margin-top: 1em;
     position: relative;
     left: 30%;
-    margin-left: 0px;
+    margin-left: 0px; */
+    align-self: baseline;
 }
 
 .about {
@@ -227,7 +231,7 @@ margin: inherit;
     padding-top: 2em;
     padding-bottom: 2em;
     border: 1px solid rgb(122, 122, 122, 0.3);
-    border-radius: 4px;
+    border-radius: 6px;
 }
 .pledges, .left, .details {
 padding-left: 2em;
@@ -268,6 +272,10 @@ padding-right: 2em;
 .pledges p {
     color: var(--moderatecyan);
     font-weight: 500;
+    cursor: pointer;
+}
+.pledges p:hover {
+    color: var(--darkcyan);
 }
 
 .bamboo_stand .pledges,
@@ -281,4 +289,124 @@ padding-right: 2em;
 .mahogany_stand .left {
     display: flex;
     justify-content: space-between;
+}
+
+
+@media(max-width: 414px) {
+    body {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .site-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bookmark {
+        display: none;
+    }
+    .bookmark-img {
+        left: 0px;
+        top: 0px;
+    }
+    .mastercraftB {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .backbook {
+        justify-content: space-around;
+    }
+    .trackers {
+        /* grid-template-columns: 1fr; */
+        top: 10em;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 0.5em;
+        justify-content: space-between;
+     
+    }
+    .trackers div {
+        text-align: center;
+        padding-bottom: 1.3em;
+    }
+    .trackers div:nth-of-type(1) {
+        border-right: none;
+       
+    }
+    .trackers div:nth-of-type(2) {
+        border-right: none;
+        
+    }
+    #small {
+        border-bottom: 1px solid rgb(122, 122, 122, 0.76);
+        padding-bottom: 1em;
+    }
+    .about {
+        top: 11em;
+    }
+    .pledges {
+        flex-direction: column;
+    }
+    .pledges {
+        padding-top: 0;
+        justify-content: space-evenly;
+    }
+    .pledges h3 {
+        padding-bottom: 12px;
+    }
+    .details {
+        padding-top: 1em;
+    }
+    .left p {
+        padding-bottom: 1em;
+    }
+    .select {
+        padding: 10px 10px;
+    }
+    .bamboo_stand .left,
+.black_stand .left,
+.mahogany_stand .left {
+    flex-direction: column;
+}
+}
+
+@media(min-width: 300px) and (max-width: 320px) {
+    .trackers {
+        top: 14em;
+    }
+    .about {
+        top: 15em;
+    }
+}
+@media(min-width: 340px) and (max-width: 360px) {
+    .trackers {
+        top: 13em;
+    }
+    .about {
+        top: 14em;
+    }
+}
+@media(min-width: 363px) and (max-width: 380px) {
+    .trackers {
+        top: 11em;
+    }
+    .about {
+        top: 12em;
+    }
+}
+@media(min-width: 510px) and (max-width: 1024px) {
+    .site-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bar {
+        display: none;
+    }
+    .trackers {
+        width: 100%;
+        top: 9em;
+    }
+    .about {
+        top: 10em;
+    }
 }

@@ -431,6 +431,14 @@ padding-right: 2em;
         top: 12em;
     }
 }
+@media(min-width: 381px) and (max-width: 395px) {
+    .trackers {
+        top: 11.5em;
+    }
+    .about {
+        top: 13em;
+    }
+}
 @media(min-width: 510px) and (max-width: 1024px) {
     .site-container {
         margin-left: 0;
@@ -449,39 +457,8 @@ padding-right: 2em;
 }
 
 @media(min-width: 510px) and (max-width: 550px) {
-    /* header .nav1 {
-        padding-left: 15px;
-        padding-right: 40px;
-    }
-    .navlist li {
-        display: none;
-    }
-    .navlist li a{
-        color: black;
-        font-weight: 700;
-    }
-    .active {
-        position: absolute;
-        left: 15%;
-        top: 3em;
-        border-radius: 5px;
-        z-index: 100;
-        background: white;
-        width: 15em;
-        height: auto;
-        padding: 0px 5px 20px 12px;
-        box-shadow: 0px 7px 17px 3px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 7px 17px 3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 7px 17px 3px rgba(0,0,0,0.75);
-    }
-    .toogle {
-        visibility: visible;
-    } */
-    .toogle {
-        display: none;
-    }
     header .nav1 {
-        padding-left: 0;
-        padding-left: 2em;
+        padding-left: 1em;
+        padding-right: 2em;
     }
 }

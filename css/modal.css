@@ -97,6 +97,11 @@ font-weight: 900;
     padding-left: 5px;
     color: var(--darkgray);
 }
+.close-m {
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(95%) contrast(91%);
+    width: 15px;
+    height: 15px;
+}
 
 input[type='radio'] {
     --active: #275EFE;
@@ -109,7 +114,6 @@ input[type='radio'] {
     width: auto;
     margin-left: 1em;
     margin-right: 1em;
-    position: absolute;
 }
 
     .radio2 div p .ple,

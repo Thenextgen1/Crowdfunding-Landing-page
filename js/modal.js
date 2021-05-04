@@ -5,6 +5,10 @@ const modalContainer = document.querySelector('#modals-bg');
 const choice = document.querySelectorAll('#choice');
 const radio = document.querySelectorAll('input[name="radio"]');
 
+setTimeout(() => {
+    modalContainer.style.visibility = 'visible'
+}, 3000)
+
 
 function modalsOpen() {
     closeM.addEventListener('click', () => {
@@ -37,7 +41,6 @@ radio.forEach((elem) => {
             } else if (elem.checked = false) {
                 elems.style.display = 'none'
             }
-
         })
     })
 })

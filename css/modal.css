@@ -17,6 +17,7 @@
    align-items: center;
    font-size: 13px;
    z-index: 10;
+   visibility: hidden;
 
 }
 
@@ -149,10 +150,15 @@ justify-content: space-between;
 
 @media(max-width: 414px) {
 .modals-container {
-    top: 12em;
+    position: absolute;
+    top: 8em;
     width: auto;
     margin-left: 1em;
     margin-right: 1em;
+   background: none;
+   padding-bottom: 10em;
+   height: auto;
+   
 }
 
     .radio2 div p .ple,

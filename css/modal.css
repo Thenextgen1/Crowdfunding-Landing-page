@@ -15,7 +15,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 15px;
+   font-size: 13px;
    z-index: 10;
 
 }
@@ -45,6 +45,12 @@
     padding: 1em;
     margin-bottom: 1em;
 }
+.radio1:hover,
+.radio2:hover,
+.radio3:hover,
+.radio4:hover {
+    border: 2px solid var(--moderatecyan);
+}
 .radio2 div,
 .radio3 div,
 .radio4 div {
@@ -54,6 +60,7 @@
 .specials {
     padding-top: 1em;
     padding-left: 1em;
+    padding-bottom: 1em;
 }
 .radio2 div p .ple,
 .radio3 div p .ple {
@@ -74,6 +81,9 @@ label {
     font-weight: 700;
     padding-left: 1em;
     
+}
+label:hover {
+    color: var(--darkcyan);
 }
 
 .radio2 div p:nth-of-type(2) {
@@ -103,9 +113,38 @@ font-weight: 900;
     height: 15px;
 }
 
-input[type='radio'] {
-    --active: #275EFE;
-    --active-inner: #fff;
+input[type='number'] {
+    padding: 10px;
+    padding-bottom: 5px;
+    width: 60px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--moderatecyan);
+    
+}
+input[type='number']::placeholder {
+    color: black;
+    font-weight: 700;
+}
+.choice p .continue {
+    margin-left: 10px;
+color: white;
+background-color: var(--darkcyan);
+padding: 10px;
+border-radius: 20px;
+cursor: pointer;
+}
+
+.choice {
+    padding-top: 1em;
+    border-top: 1px solid var(--darkgray);
+display: flex;
+justify-content: space-between;
+}
+
+#choice {
+    display: none;
 }
 
 @media(max-width: 414px) {
@@ -114,6 +153,7 @@ input[type='radio'] {
     width: auto;
     margin-left: 1em;
     margin-right: 1em;
+    height: 100vh;
 }
 
     .radio2 div p .ple,

@@ -54,6 +54,9 @@ header .nav1 {
     
     display: none;
 }
+.close-m {
+    cursor: pointer;
+}
 .navlist li{
     display: inline-block;
     padding-right: 2em;

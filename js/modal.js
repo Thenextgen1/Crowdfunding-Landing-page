@@ -1,5 +1,21 @@
 const bookmark = document.querySelector('.bookmark');
 const bookmarkImg = document.querySelector('.bookmark-img');
+const closeM = document.querySelector('.close-m');
+const modalContainer = document.querySelector('#modals-bg');
+
+closeM.addEventListener('click', () => {
+    modalContainer.classList.add('exit');
+})
+
+
+
+
+
+
+
+
+
+
 bookmark.addEventListener('click', (e) => {
     bookmark.innerText = 'Bookmarked';
     bookmark.style.color = 'hsl(176, 72%, 28%)';

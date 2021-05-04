@@ -11,7 +11,6 @@
    height: 100vh;
    top: 0;
    left: 0; 
-   background-color: rgba(0,0,0,0.2);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -135,6 +134,7 @@ background-color: var(--darkcyan);
 padding: 10px;
 border-radius: 20px;
 cursor: pointer;
+border: none;
 }
 
 .choice {
@@ -147,11 +147,46 @@ justify-content: space-between;
 #choice {
     display: none;
 }
+.courtsey {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+    z-index: 100;
+    border-radius: 5px;
+    visibility: hidden;
 
+}
+.courtsey h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.courtsey p {
+    line-height: 1.5;
+    padding-bottom: 2em;
+    text-align: center;
+    color: var(--darkgray);
+}
+.courtsey button {
+    cursor: pointer;
+    padding: 12px 30px;
+    border: none;
+    background-color: var(--moderatecyan);
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+}
 @media(max-width: 414px) {
 .modals-container {
     position: absolute;
     top: 8em;
+    height: inherit;
     width: auto;
     margin-left: 1em;
     margin-right: 1em;
@@ -159,6 +194,14 @@ justify-content: space-between;
    padding-bottom: 10em;
    height: auto;
    
+}
+.choice {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.choice p {
+    padding-bottom: 1em;
 }
 
     .radio2 div p .ple,

@@ -21,7 +21,7 @@
 }
 
 .modals-container.exit {
-    display: none;
+    visibility: hidden;
 }
 .modal {
     background-color: white;

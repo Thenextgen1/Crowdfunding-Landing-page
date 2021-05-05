@@ -2,14 +2,14 @@ const bookmark = document.querySelector('.bookmark');
 const bookmarkImg = document.querySelector('.bookmark-img');
 const closeM = document.querySelector('.close-m');
 const modalContainer = document.querySelector('#modals-bg');
-const choice = document.querySelectorAll('#choice1');
+const choice = document.querySelectorAll('#choice');
 const radio = document.querySelectorAll('input[name="radio"]');
 const body = document.querySelector('body');
 const select = document.querySelectorAll('.select');
 const submit = document.querySelectorAll('.continue');
 const courtsey = document.querySelector('.courtsey');
 const reset = document.querySelector('.reset');
-
+const bookmarkCont = document.querySelector('.bookmarkCont');
 
 
 

@@ -374,13 +374,25 @@ padding-right: 2em;
     .backbook {
         justify-content: space-around;
     }
-    .trackers {
-        /* grid-template-columns: 1fr; */
-        top: 10em;
-        flex-direction: column;
-        width: 100%;
+    .finals {
+        top: 11em;
         padding-left: 1em;
         padding-right: 0.5em;
+        width: 100%;
+    }
+    .progressBar {
+        margin-left: 1em;
+        width: 15em;
+    }
+    .progress {
+        width: 13em;
+    }
+    .trackers {
+        /* grid-template-columns: 1fr; */
+        
+        flex-direction: column;
+        
+       
         justify-content: space-between;
      
     }
@@ -396,7 +408,7 @@ padding-right: 2em;
         border-right: none;
         
     }
-    #small {
+    .small {
         border-bottom: 1px solid rgb(122, 122, 122, 0.76);
         padding-bottom: 1em;
     }
@@ -430,35 +442,55 @@ padding-right: 2em;
 }
 
 @media(min-width: 300px) and (max-width: 320px) {
-    .trackers {
-        top: 14em;
-    }
-    .about {
-        top: 15em;
-    }
-}
-@media(min-width: 340px) and (max-width: 360px) {
-    .trackers {
+    .finals {
         top: 13em;
     }
     .about {
         top: 14em;
     }
+    .progressBar {
+        width: 13em;
+    }
+    .progress {
+        width: 11em;
+    }
 }
-@media(min-width: 363px) and (max-width: 380px) {
-    .trackers {
+@media(min-width: 340px) and (max-width: 360px) {
+    .finals {
         top: 11em;
     }
     .about {
         top: 12em;
     }
 }
-@media(min-width: 381px) and (max-width: 395px) {
-    .trackers {
-        top: 11.5em;
+@media(min-width: 363px) and (max-width: 380px) {
+    .finals {
+        top: 11em;
     }
     .about {
-        top: 13em;
+        top: 12em;
+    }
+}
+@media(min-width: 250px) and (max-width: 280px) {
+    .finals {
+        top: 18em;
+    }
+    .about {
+        top: 19em;
+    }
+    .progressBar {
+        width: 11em;
+    }
+    .progress {
+        width: 9em;
+    }
+}
+@media(min-width: 381px) and (max-width: 395px) {
+    .finals {
+        top: 10.5em;
+    }
+    .about {
+        top: 12em;
     }
 }
 @media(min-width: 510px) and (max-width: 1024px) {
@@ -466,10 +498,7 @@ padding-right: 2em;
         margin-left: 0;
         margin-right: 0;
     }
-    .bar {
-        display: none;
-    }
-    .trackers {
+    .finals {
         width: 100%;
         top: 9em;
     }
@@ -477,7 +506,15 @@ padding-right: 2em;
         top: 10em;
     }
 }
+@media(min-width: 400px) and (max-width: 420px) {
+.finals {
+    top: 10em;
+}
+.about {
+    top: 11em;
+}
 
+}
 @media(min-width: 510px) and (max-width: 550px) {
     header .nav1 {
         padding-left: 1em;

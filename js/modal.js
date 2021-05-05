@@ -17,6 +17,7 @@ function modalsOpen() {
     closeM.addEventListener('click', () => {
         modalContainer.classList.add('exit');
         body.style.backgroundColor = 'rgb(122, 122, 122, 0.1)';
+        location.reload();
     })
     bookmark.addEventListener('click', (e) => {
         bookmark.innerText = 'Bookmarked';

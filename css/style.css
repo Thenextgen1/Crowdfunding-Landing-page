@@ -156,10 +156,8 @@ header .nav1 {
     background-color: var(--darkcyan);
 }
 
-.trackers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.finals {
+    
     position: relative;
     top: 8em;
     background-color: white;
@@ -167,12 +165,39 @@ header .nav1 {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 1.5em;
+    padding-left: 4em;
+    padding-right: 4.5em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid white;
 }
+.trackers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.progressBar {
+    background-color: rgb(122, 122, 122, 0.1);
+    /* width: 39.375rem;
+    height: 0.9375rem;
+    
+    margin-top: 1em; */
+margin-top: 1em;
+margin-left: 2em;
+    height: 0.5em;
+    width: 25em;
+    border-radius: 1.25rem;
+}
 
+.progress {
+    /* height: 100%;
+    width: 31.25rem;
+    
+    background: var(--moderate-cyan); */
+    width: 22em;
+    background-color: var(--moderatecyan);
+    height: 100%;
+    border-radius: 1.25rem;
+}
 
 .trackers div{
 padding-left: 3em;
@@ -192,17 +217,17 @@ padding-right: 2.5em;
 }
 
 
-#small {
+.small {
     color: var(--darkgray);
     font-size: 10px;
 }
 
-.bar {
+/* .bar {
     height: 10px;
     background-color: var(--moderatecyan);
     visibility: hidden;
     align-self: baseline;
-}
+} */
 
 .about {
     padding-top: 2em;

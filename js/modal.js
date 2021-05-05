@@ -2,7 +2,7 @@ const bookmark = document.querySelector('.bookmark');
 const bookmarkImg = document.querySelector('.bookmark-img');
 const closeM = document.querySelector('.close-m');
 const modalContainer = document.querySelector('#modals-bg');
-const choice = document.querySelectorAll('#choice');
+const choice = document.querySelectorAll('#choice1');
 const radio = document.querySelectorAll('input[name="radio"]');
 const body = document.querySelector('body');
 const select = document.querySelectorAll('.select');

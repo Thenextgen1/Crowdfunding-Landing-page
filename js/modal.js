@@ -12,6 +12,7 @@ const reset = document.querySelector('.reset');
 const bookmarkCont = document.querySelector('.bookmarkCont');
 const select1 = document.querySelector('#select1');
 const select2 = document.querySelector('#select2');
+const backp = document.querySelector('.backP')
 
 let amountleft1 = document.querySelector('.amount_left');
 let amountleft2 = document.querySelector('.amount_left2');
@@ -19,7 +20,12 @@ let amountleft2 = document.querySelector('.amount_left2');
 let num2 = 64;
 let num1 = 101;
 
-
+backp.addEventListener('click', () => {
+    setTimeout(() => {
+        modalContainer.style.visibility = 'visible'
+        body.style.backgroundColor = 'rgba(0,0,0,0.2)'
+    }, 500)
+})
 
 
 function modalsOpen() {
@@ -59,7 +65,7 @@ modalsOpen();
 function modalClose() {
     reset.addEventListener('click', () => {
         courtsey.style.visibility = 'hidden'
-        location.reload();
+        // location.reload();
     })
 
     submit.forEach((items) => {
@@ -78,18 +84,12 @@ function updateNum() {
     select1.addEventListener('click', () => {
         num1--;
         amountleft1.innerText = num1;
-        setTimeout(() => {
-            modalContainer.style.visibility = 'visible'
-            body.style.backgroundColor = 'rgba(0,0,0,0.2)'
-        }, 500)
+        courtsey.style.visibility = 'visible'
     })
     select2.addEventListener('click', () => {
         num2--;
         amountleft2.innerText = num2;
-        setTimeout(() => {
-            modalContainer.style.visibility = 'visible'
-            body.style.backgroundColor = 'rgba(0,0,0,0.2)'
-        }, 500)
+        courtsey.style.visibility = 'visible'
     })
 }
 updateNum();

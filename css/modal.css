@@ -203,6 +203,12 @@ justify-content: space-between;
 .choice p {
     padding-bottom: 1em;
 }
+.courtsey {
+  width: 90%;
+}
+.courtsey h3 {
+    text-align: center;
+}
 
     .radio2 div p .ple,
     .radio3 div p .ple,

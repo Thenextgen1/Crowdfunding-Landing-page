@@ -24,6 +24,7 @@ backp.addEventListener('click', () => {
     setTimeout(() => {
         modalContainer.style.visibility = 'visible'
         body.style.backgroundColor = 'rgba(0,0,0,0.2)'
+        modalContainer.style.display = 'flex';
     }, 500)
 })
 
@@ -65,7 +66,8 @@ modalsOpen();
 function modalClose() {
     reset.addEventListener('click', () => {
         courtsey.style.visibility = 'hidden'
-        // location.reload();
+        body.style.backgroundColor = 'rgb(122, 122, 122, 0.1)';
+
     })
 
     submit.forEach((items) => {

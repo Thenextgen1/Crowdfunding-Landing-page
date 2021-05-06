@@ -173,6 +173,7 @@ justify-content: space-between;
     text-align: center;
     color: var(--darkgray);
 }
+
 .courtsey button {
     cursor: pointer;
     padding: 12px 30px;

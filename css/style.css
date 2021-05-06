@@ -30,6 +30,7 @@ body {
 }
 
 
+
 ul,
 h1,
 li {
@@ -270,12 +271,13 @@ padding-right: 2em;
 .left {
     padding-top: 1em;
 }
-.left p {
+.left p .amount_left,
+.left p .amount_left2{
     font-size: 1.4em;
     color: black;
    font-weight: 900;
 }
-.left p span {
+.left p span:nth-of-type(2) {
     color: rgb(122, 122, 122, 0.9);
     font-size: small;
     font-weight: normal;
